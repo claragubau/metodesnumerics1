@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<math.h>
 
+/*retorna l'index mes gran de la fila per fer pivotatge max columnes*/
 int pivot(int n, int k, double **mat) {
         int i, fila=0;
         double piv=0;
@@ -14,6 +15,7 @@ int pivot(int n, int k, double **mat) {
 return fila;
 }
 
+/*gauss normal, pivotem indica 1 si fem max columnes o 0 sense piv*/
 int gauss(int n, double **a, int pivotem, double tol){
 	int i, j, k, piv;
 	double *aux;
